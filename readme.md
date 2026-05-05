@@ -2,6 +2,8 @@
 
 A maintained fork of [zen-cleaned-url-bar](https://github.com/dinnoyow/zen-cleaned-url-bar) by [@Dinno-DEV](https://github.com/dinnoyow), with bug fixes for recent Zen/Firefox versions.
 
+<img width="1743" height="1184" alt="Image" src="https://github.com/user-attachments/assets/8b71dd02-7ef4-45d7-8238-50c0bc034385" />
+
 ## What's different
 
 - **Fix transparent URL bar** — adds a no-op `backdrop-filter` on `#browser` to re-establish the stacking context removed upstream. Refs:
