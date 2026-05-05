@@ -21,7 +21,7 @@
         "property": "mod.cleanedurlbar.customselectcolor",
         "label": "Selected URL color (rgb, hsl, hex)",
         "type": "string",
-        "defaultValue": "rgba(80, 80, 250, 0.75)"
+        "defaultValue": "rgba(125, 125, 125, 0.65)"
     },
     {
         "property": "mod.cleanedurlbar.customselectfontcolor",
