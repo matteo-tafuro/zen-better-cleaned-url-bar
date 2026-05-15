@@ -83,6 +83,17 @@
     transition: background-color 0.2s ease !important;
   }
 
+  /* Selected row favicon background: Subtle mode
+     Replicates the hover-style tint instead of the default white. */
+  body:has(#theme-Better-Cleaned-URL-Bar[mod-cleanedurlbar-faviconbg="subtle"]) .urlbarView-row[selected] .urlbarView-favicon {
+    background-color: color-mix(in srgb, var(--zen-branding-bg-reverse) 5%, transparent 95%) !important;
+  }
+
+  /* Selected row favicon background: Transparent mode */
+  body:has(#theme-Better-Cleaned-URL-Bar[mod-cleanedurlbar-faviconbg="transparent"]) .urlbarView-row[selected] .urlbarView-favicon {
+    background-color: transparent !important;
+  }
+
   /* Dim the URL in results to emphasize the title (toggle via preference) */
   @media (-moz-bool-pref: "mod.cleanedurlbar.dimurls") {
     .urlbarView-url {

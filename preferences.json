@@ -58,5 +58,16 @@
         "label": "Dim URLs in results (emphasize titles)",
         "type": "checkbox",
         "defaultValue": true
+    },
+    {
+        "property": "mod.cleanedurlbar.faviconbg",
+        "label": "Selected result favicon background",
+        "type": "dropdown",
+        "placeholder": "White",
+        "defaultValue": "subtle",
+        "options": [
+            { "label": "Subtle", "value": "subtle" },
+            { "label": "Transparent", "value": "transparent" }
+        ]
     }
 ]
