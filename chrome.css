@@ -7,17 +7,20 @@
     backdrop-filter: blur(0) !important;
   }
 
-  /* Blurs the background */
+  /* URL bar panel shape and border */
   #urlbar[breakout-extend="true"] .urlbar-background {
     border-radius: 15px !important;
     border: solid 3px color-mix(in hsl, hsl(0 0 50), transparent 90%) !important;
   }
 
+  /* Glassmorphic blur effect behind the URL bar (configurable) */
   #urlbar[breakout-extend="true"] .urlbar-background {
     backdrop-filter: blur(var(--mod-cleanedurlbar-customblur, 25px)) !important;
   }
 
-  /* URL bar color: Custom mode (default) */
+  /* URL bar background color: Custom mode (default)
+     Uses separate user-defined colors for dark and light themes,
+     mixed with transparent by the opacity preference. */
   body:not(:has(#theme-Better-Cleaned-URL-Bar[mod-cleanedurlbar-barcolormode="accent"])) {
     @media (prefers-color-scheme: dark) {
       & #urlbar[breakout-extend="true"] .urlbar-background {
@@ -36,7 +39,8 @@
     }
   }
 
-  /* URL bar color: Accent Color mode */
+  /* URL bar background color: Accent Color mode
+     Uses Zen's accent color (--zen-primary-color) for both themes. */
   body:has(#theme-Better-Cleaned-URL-Bar[mod-cleanedurlbar-barcolormode="accent"]) {
     & #urlbar[breakout-extend="true"] .urlbar-background {
       background-color: color-mix(in hsl,
@@ -45,8 +49,9 @@
     }
   }
 
-  /* Custom URL result selected color */
-  /* When "Custom" mode is active (default) */
+  /* Selected result row: Custom mode (default)
+     Background and font colors are user-defined. Font color targets
+     child elements directly to override Zen's built-in styles. */
   body:not(:has(#theme-Better-Cleaned-URL-Bar[mod-cleanedurlbar-selectcolormode="accent"])) .urlbarView-row[selected] {
     background-color: color-mix(in srgb,
         var(--mod-cleanedurlbar-customselectcolor),
@@ -60,24 +65,25 @@
     }
   }
 
-  /* When "Accent Color" mode is active */
+  /* Selected result row: Accent Color mode
+     Uses Zen's accent color, matching the native selection style. */
   body:has(#theme-Better-Cleaned-URL-Bar[mod-cleanedurlbar-selectcolormode="accent"]) .urlbarView-row[selected] {
     background-color: color-mix(in srgb,
         color-mix(in srgb, var(--zen-primary-color) 50%, light-dark(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.2)) 50%),
         transparent var(--mod-cleanedurlbar-selectopacity, 0%)) !important;
   }
 
-  /* Unifies the border radius */
+  /* Rounded corners for result rows */
   .urlbarView-row {
     border-radius: 11px !important;
   }
 
-  /* Deletes the border */
+  /* Remove default border between results and URL input */
   .urlbarView-body-inner {
     border: none !important;
   }
 
-  /* Styles the search options */
+  /* Style the search engine shortcuts row at the bottom */
   .search-one-offs {
     border-top: none !important;
     border-radius: 10px !important;
