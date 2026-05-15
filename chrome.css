@@ -14,7 +14,7 @@
   }
 
   #urlbar[breakout-extend="true"] .urlbar-background {
-    backdrop-filter: blur(25px) !important;
+    backdrop-filter: blur(var(--mod-cleanedurlbar-customblur, 25px)) !important;
   }
 
   @media (prefers-color-scheme: dark) {

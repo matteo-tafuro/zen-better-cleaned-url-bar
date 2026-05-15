@@ -18,6 +18,12 @@
         "defaultValue": "40%"
     },
     {
+        "property": "mod.cleanedurlbar.customblur",
+        "label": "Background blur amount (e.g. 25px, 0px for none)",
+        "type": "string",
+        "defaultValue": "25px"
+    },
+    {
         "property": "mod.cleanedurlbar.customselectcolor",
         "label": "Selected URL color (rgb, hsl, hex)",
         "type": "string",
