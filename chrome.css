@@ -37,7 +37,13 @@
   .urlbarView-row {
     &[selected] {
       background-color: var(--mod-cleanedurlbar-customselectcolor) !important;
-      color: var(--mod-cleanedurlbar-customselectfontcolor) !important;
+
+      & .urlbarView-title,
+      & .urlbarView-url,
+      & .urlbarView-action,
+      & .urlbarView-title-separator::before {
+        color: var(--mod-cleanedurlbar-customselectfontcolor) !important;
+      }
     }
   }
 
