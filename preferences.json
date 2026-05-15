@@ -1,5 +1,11 @@
 [
     {
+        "property": "mod.cleanedurlbar.customblur",
+        "label": "Background blur amount (e.g. 25px, 0px for none)",
+        "type": "string",
+        "defaultValue": "25px"
+    },
+    {
         "property": "mod.cleanedurlbar.customtransparency",
         "label": "URL bar color opacity (0% = solid, 100% = fully transparent)",
         "type": "string",
@@ -22,12 +28,6 @@
         "label": "Custom URL bar color [Light Mode] (rgb, hsl, hex)",
         "type": "string",
         "defaultValue": "hsl(0 0 90)"
-    },
-    {
-        "property": "mod.cleanedurlbar.customblur",
-        "label": "Background blur amount (e.g. 25px, 0px for none)",
-        "type": "string",
-        "defaultValue": "25px"
     },
     {
         "property": "mod.cleanedurlbar.selectopacity",
