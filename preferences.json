@@ -3,7 +3,7 @@
         "property": "mod.cleanedurlbar.customtransparency",
         "label": "URL bar color opacity (0% = solid, 100% = fully transparent)",
         "type": "string",
-        "defaultValue": "40%"
+        "defaultValue": "90%"
     },
     {
         "property": "mod.cleanedurlbar.barcolormode",
@@ -12,8 +12,14 @@
         "defaultValue": "custom",
         "placeholder": "Custom (default)",
         "options": [
-            { "label": "Custom", "value": "custom" },
-            { "label": "Accent Color", "value": "accent" }
+            {
+                "label": "Custom",
+                "value": "custom"
+            },
+            {
+                "label": "Accent Color",
+                "value": "accent"
+            }
         ]
     },
     {
@@ -38,7 +44,7 @@
         "property": "mod.cleanedurlbar.selectopacity",
         "label": "Selected result opacity (0% = solid, 100% = fully transparent)",
         "type": "string",
-        "defaultValue": "0%"
+        "defaultValue": "70%"
     },
     {
         "property": "mod.cleanedurlbar.selectcolormode",
@@ -47,20 +53,26 @@
         "defaultValue": "custom",
         "placeholder": "Custom (default)",
         "options": [
-            { "label": "Custom", "value": "custom" },
-            { "label": "Accent Color", "value": "accent" }
+            {
+                "label": "Custom",
+                "value": "custom"
+            },
+            {
+                "label": "Accent Color",
+                "value": "accent"
+            }
         ]
     },
     {
         "property": "mod.cleanedurlbar.customselectcolor",
         "label": "Selected result background color (rgb, hsl, hex)",
         "type": "string",
-        "defaultValue": "rgb(125, 125, 125)"
+        "defaultValue": "hsl(0 0 80)"
     },
     {
         "property": "mod.cleanedurlbar.customselectfontcolor",
         "label": "Selected result font color (rgb, hsl, hex)",
         "type": "string",
-        "defaultValue": "rgba(255,255,255,1)"
+        "defaultValue": "rgb(255,255,255)"
     }
 ]
