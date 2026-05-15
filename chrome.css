@@ -82,6 +82,13 @@
     border-radius: 11px !important;
   }
 
+  /* Dim the URL in results to emphasize the title (toggle via preference) */
+  @media (-moz-bool-pref: "mod.cleanedurlbar.dimurls") {
+    .urlbarView-url {
+      opacity: 0.5 !important;
+    }
+  }
+
   /* Remove default border between results and URL input */
   .urlbarView-body-inner {
     border: none !important;

@@ -52,5 +52,11 @@
         "label": "Custom selected result font color (rgb, hsl, hex)",
         "type": "string",
         "defaultValue": "rgb(255,255,255)"
+    },
+    {
+        "property": "mod.cleanedurlbar.dimurls",
+        "label": "Dim URLs in results (emphasize titles)",
+        "type": "checkbox",
+        "defaultValue": true
     }
 ]
