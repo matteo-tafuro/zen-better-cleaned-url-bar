@@ -1,5 +1,11 @@
 [
     {
+        "property": "mod.cleanedurlbar.customtransparency",
+        "label": "URL bar color opacity (0% = solid, 100% = fully transparent)",
+        "type": "string",
+        "defaultValue": "40%"
+    },
+    {
         "property": "mod.cleanedurlbar.barcolormode",
         "label": "URL bar color mode (Custom uses colors below)",
         "type": "dropdown",
@@ -12,21 +18,15 @@
     },
     {
         "property": "mod.cleanedurlbar.customdarkcolor",
-        "label": "URL Bar Color (HSL only) [Dark Mode]",
+        "label": "URL bar color [Dark Mode] (rgb, hsl, hex)",
         "type": "string",
         "defaultValue": "hsl(0 0 10)"
     },
     {
         "property": "mod.cleanedurlbar.customlightcolor",
-        "label": "URL Bar Color (HSL only) [Light Mode]",
+        "label": "URL bar color [Light Mode] (rgb, hsl, hex)",
         "type": "string",
         "defaultValue": "hsl(0 0 90)"
-    },
-    {
-        "property": "mod.cleanedurlbar.customtransparency",
-        "label": "URL bar color opacity (0% = solid, 100% = fully transparent)",
-        "type": "string",
-        "defaultValue": "40%"
     },
     {
         "property": "mod.cleanedurlbar.customblur",
@@ -53,14 +53,13 @@
     },
     {
         "property": "mod.cleanedurlbar.customselectcolor",
-        "label": "Selected URL color (rgb, hsl, hex)",
-        "label": "Selected URL color (rgb, hsl, hex)",
+        "label": "Selected result background color (rgb, hsl, hex)",
         "type": "string",
-        "defaultValue": "rgba(125, 125, 125, 0.65)"
+        "defaultValue": "rgb(125, 125, 125)"
     },
     {
         "property": "mod.cleanedurlbar.customselectfontcolor",
-        "label": "Selected URL font color (rgb, hsl, hex)",
+        "label": "Selected result font color (rgb, hsl, hex)",
         "type": "string",
         "defaultValue": "rgba(255,255,255,1)"
     }
