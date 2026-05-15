@@ -17,18 +17,30 @@
     backdrop-filter: blur(var(--mod-cleanedurlbar-customblur, 25px)) !important;
   }
 
-  @media (prefers-color-scheme: dark) {
-    #urlbar[breakout-extend="true"] .urlbar-background {
-      background-color: color-mix(in hsl,
-          var(--mod-cleanedurlbar-customdarkcolor),
-          transparent var(--mod-cleanedurlbar-customtransparency)) !important;
+  /* URL bar color: Custom mode (default) */
+  body:not(:has(#theme-Better-Cleaned-URL-Bar[mod-cleanedurlbar-barcolormode="accent"])) {
+    @media (prefers-color-scheme: dark) {
+      & #urlbar[breakout-extend="true"] .urlbar-background {
+        background-color: color-mix(in hsl,
+            var(--mod-cleanedurlbar-customdarkcolor),
+            transparent var(--mod-cleanedurlbar-customtransparency)) !important;
+      }
+    }
+
+    @media (prefers-color-scheme: light) {
+      & #urlbar[breakout-extend="true"] .urlbar-background {
+        background-color: color-mix(in hsl,
+            var(--mod-cleanedurlbar-customlightcolor),
+            transparent var(--mod-cleanedurlbar-customtransparency)) !important;
+      }
     }
   }
 
-  @media (prefers-color-scheme: light) {
-    #urlbar[breakout-extend="true"] .urlbar-background {
+  /* URL bar color: Accent Color mode */
+  body:has(#theme-Better-Cleaned-URL-Bar[mod-cleanedurlbar-barcolormode="accent"]) {
+    & #urlbar[breakout-extend="true"] .urlbar-background {
       background-color: color-mix(in hsl,
-          var(--mod-cleanedurlbar-customlightcolor),
+          var(--zen-primary-color),
           transparent var(--mod-cleanedurlbar-customtransparency)) !important;
     }
   }

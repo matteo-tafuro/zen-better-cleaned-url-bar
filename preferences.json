@@ -1,19 +1,30 @@
 [
     {
+        "property": "mod.cleanedurlbar.barcolormode",
+        "label": "URL bar color mode (Custom uses colors below)",
+        "type": "dropdown",
+        "defaultValue": "custom",
+        "placeholder": "Custom (default)",
+        "options": [
+            { "label": "Custom", "value": "custom" },
+            { "label": "Accent Color", "value": "accent" }
+        ]
+    },
+    {
         "property": "mod.cleanedurlbar.customdarkcolor",
-        "label": "Cleaned URL Bar Color (HSL only) [Dark Mode]",
+        "label": "URL Bar Color (HSL only) [Dark Mode]",
         "type": "string",
         "defaultValue": "hsl(0 0 10)"
     },
     {
         "property": "mod.cleanedurlbar.customlightcolor",
-        "label": "Cleaned URL Bar Color (HSL only) [Light Mode]",
+        "label": "URL Bar Color (HSL only) [Light Mode]",
         "type": "string",
         "defaultValue": "hsl(0 0 90)"
     },
     {
         "property": "mod.cleanedurlbar.customtransparency",
-        "label": "Transparency (In percentage ex. 100%)",
+        "label": "URL bar color opacity (0% = solid, 100% = fully transparent)",
         "type": "string",
         "defaultValue": "40%"
     },
