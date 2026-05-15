@@ -4,6 +4,25 @@ Elegant and minimalistic glassmorphic URL bar for [Zen Browser](https://zen-brow
 
 <img width="1743" height="1184" alt="Image" src="https://github.com/user-attachments/assets/8b71dd02-7ef4-45d7-8238-50c0bc034385" />
 
+## About
+
+This is a maintained fork of [dinnoyow/zen-cleaned-url-bar](https://github.com/dinnoyow/zen-cleaned-url-bar) with bugfixes and new features.
+
+### What's fixed
+
+- **Transparent/broken URL bar on Zen 1.19.9b+** ([#27](https://github.com/dinnoyow/zen-cleaned-url-bar/issues/27), [#37](https://github.com/dinnoyow/zen-cleaned-url-bar/issues/37), [#23](https://github.com/dinnoyow/zen-cleaned-url-bar/issues/23)) — Firefox 150 removed the stacking context from `#browser`, breaking `backdrop-filter` on child elements. Fixed by re-establishing a no-op `backdrop-filter` on the parent.
+- **Custom colors not working** ([#19](https://github.com/dinnoyow/zen-cleaned-url-bar/issues/19), [#29](https://github.com/dinnoyow/zen-cleaned-url-bar/issues/29), [#31](https://github.com/dinnoyow/zen-cleaned-url-bar/issues/31), [#35](https://github.com/dinnoyow/zen-cleaned-url-bar/issues/35)) — Zen renamed `#urlbar-background` (ID) to `.urlbar-background` (class), so the old selector stopped matching. Updated all selectors accordingly.
+- **Black text on dark mode** ([#21](https://github.com/dinnoyow/zen-cleaned-url-bar/issues/21)) — Selected result font color now targets child elements directly to override Zen's built-in styles.
+
+### What's new
+
+- **Accent color mode** for both the URL bar and selected result — uses Zen's accent color instead of custom colors
+- **Configurable blur amount** — set any value or `0px` to disable
+- **Selected result opacity** — control transparency of the selection highlight
+- **Dim URLs in results** — reduces URL opacity to make titles more prominent
+- **Configurable favicon background** on selected results (white, subtle, or transparent)
+- **Smooth transition** on result row selection
+
 ## Installation
 
 ### Zen Theme Store
