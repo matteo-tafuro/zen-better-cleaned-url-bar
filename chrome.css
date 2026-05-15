@@ -80,6 +80,7 @@
   /* Rounded corners for result rows */
   .urlbarView-row {
     border-radius: 11px !important;
+    transition: background-color 0.2s ease !important;
   }
 
   /* Dim the URL in results to emphasize the title (toggle via preference) */
