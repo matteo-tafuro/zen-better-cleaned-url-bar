@@ -34,17 +34,21 @@
   }
 
   /* Custom URL result selected color */
-  .urlbarView-row {
-    &[selected] {
-      background-color: var(--mod-cleanedurlbar-customselectcolor) !important;
+  /* When "Custom" mode is active (default) */
+  body:not(:has(#theme-Better-Cleaned-URL-Bar[mod-cleanedurlbar-selectcolormode="accent"])) .urlbarView-row[selected] {
+    background-color: var(--mod-cleanedurlbar-customselectcolor) !important;
 
-      & .urlbarView-title,
-      & .urlbarView-url,
-      & .urlbarView-action,
-      & .urlbarView-title-separator::before {
-        color: var(--mod-cleanedurlbar-customselectfontcolor) !important;
-      }
+    & .urlbarView-title,
+    & .urlbarView-url,
+    & .urlbarView-action,
+    & .urlbarView-title-separator::before {
+      color: var(--mod-cleanedurlbar-customselectfontcolor) !important;
     }
+  }
+
+  /* When "Accent Color" mode is active */
+  body:has(#theme-Better-Cleaned-URL-Bar[mod-cleanedurlbar-selectcolormode="accent"]) .urlbarView-row[selected] {
+    background-color: color-mix(in srgb, var(--zen-primary-color) 50%, light-dark(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.2)) 50%) !important;
   }
 
   /* Unifies the border radius */
