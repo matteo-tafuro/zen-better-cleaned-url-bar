@@ -6,31 +6,20 @@
         "defaultValue": "90%"
     },
     {
-        "property": "mod.cleanedurlbar.barcolormode",
-        "label": "URL bar color mode (Custom uses colors below)",
-        "type": "dropdown",
-        "defaultValue": "custom",
-        "placeholder": "Custom (default)",
-        "options": [
-            {
-                "label": "Custom",
-                "value": "custom"
-            },
-            {
-                "label": "Accent Color",
-                "value": "accent"
-            }
-        ]
+        "property": "mod.cleanedurlbar.baraccent",
+        "label": "Use accent color for URL bar (uncheck to use custom colors below)",
+        "type": "checkbox",
+        "defaultValue": true
     },
     {
         "property": "mod.cleanedurlbar.customdarkcolor",
-        "label": "URL bar color [Dark Mode] (rgb, hsl, hex)",
+        "label": "Custom URL bar color [Dark Mode] (rgb, hsl, hex)",
         "type": "string",
         "defaultValue": "hsl(0 0 10)"
     },
     {
         "property": "mod.cleanedurlbar.customlightcolor",
-        "label": "URL bar color [Light Mode] (rgb, hsl, hex)",
+        "label": "Custom URL bar color [Light Mode] (rgb, hsl, hex)",
         "type": "string",
         "defaultValue": "hsl(0 0 90)"
     },
@@ -47,31 +36,20 @@
         "defaultValue": "70%"
     },
     {
-        "property": "mod.cleanedurlbar.selectcolormode",
-        "label": "Selected result color mode (Custom uses colors below)",
-        "type": "dropdown",
-        "defaultValue": "custom",
-        "placeholder": "Custom (default)",
-        "options": [
-            {
-                "label": "Custom",
-                "value": "custom"
-            },
-            {
-                "label": "Accent Color",
-                "value": "accent"
-            }
-        ]
+        "property": "mod.cleanedurlbar.selectaccent",
+        "label": "Use accent color for selected result (uncheck to use custom colors below)",
+        "type": "checkbox",
+        "defaultValue": true
     },
     {
         "property": "mod.cleanedurlbar.customselectcolor",
-        "label": "Selected result background color (rgb, hsl, hex)",
+        "label": "Custom selected result background color (rgb, hsl, hex)",
         "type": "string",
         "defaultValue": "hsl(0 0 80)"
     },
     {
         "property": "mod.cleanedurlbar.customselectfontcolor",
-        "label": "Selected result font color (rgb, hsl, hex)",
+        "label": "Custom selected result font color (rgb, hsl, hex)",
         "type": "string",
         "defaultValue": "rgb(255,255,255)"
     }
