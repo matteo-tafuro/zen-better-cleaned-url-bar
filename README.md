@@ -21,7 +21,7 @@ This is a maintained fork of [dinnoyow/zen-cleaned-url-bar](https://github.com/d
 - **Selected result opacity** — control transparency of the selection highlight
 - **Dim URLs in results** — reduces URL opacity to make titles more prominent
 - **Configurable favicon background** on selected results (white, subtle, or transparent)
-- **Smooth transition** on result row selection
+- **Smooth transitions** on result row hover/selection — highlight fades in and out
 
 ## Installation
 
